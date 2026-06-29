@@ -1,0 +1,9 @@
+*.csv
+
+# Ignore python cache
+__pycache__/
+.ipynb_checkpoints/
+.venv/ 
+
+csvs/
+previous_notebooks/

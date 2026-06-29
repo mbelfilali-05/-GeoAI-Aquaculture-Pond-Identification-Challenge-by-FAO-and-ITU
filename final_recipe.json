@@ -1,0 +1,9 @@
+{
+  "nodata_handling": "-9999 -> NaN, nan-aware summaries + *_nvalid features",
+  "augmentation": "concat original + corrupt(0.3) + corrupt(0.6)",
+  "models": "HistGradientBoosting(shallow,l2=1) + Pipeline(median-impute,scale,LogReg)",
+  "combine": "0.5*HGB + 0.5*LR",
+  "class_weight": "none",
+  "calibration": "none",
+  "threshold": 0.5
+}

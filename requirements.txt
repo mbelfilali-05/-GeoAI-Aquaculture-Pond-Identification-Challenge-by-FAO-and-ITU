@@ -1,0 +1,27 @@
+# Core stack for the Aquaculture Pond Detection notebooks (Stages 0-7)
+# Install with:  pip install -r requirements.txt
+
+# notebook environment
+jupyter>=1.0
+notebook>=7.0
+
+# data & numerics
+numpy>=1.26
+pandas>=2.0
+scipy>=1.11
+
+# modeling
+scikit-learn>=1.3        # HistGradientBoostingClassifier, pipelines, metrics, KMeans, GroupKFold
+
+# plotting
+matplotlib>=3.7
+seaborn>=0.12
+
+# interpretability (Stage 6)
+shap>=0.44
+
+# optional but recommended on your machine (Stage 4/5 note: faster, usually a touch stronger)
+lightgbm>=4.0
+
+# optional: only if you run the sustainability/emissions cell in Stage 7
+# codecarbon>=2.3
